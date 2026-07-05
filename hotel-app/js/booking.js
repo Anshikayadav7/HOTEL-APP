@@ -1,10 +1,3 @@
-/* ============================================
-   booking.js — Booking/Enquiry Form Page Logic
-   - Reads ?id= from URL, loads hotel summary
-   - Live price summary updates as dates change
-   - Form validation before submission
-   ============================================ */
-
 const loadingMsg = document.getElementById("loadingMsg");
 const hotelSummary = document.getElementById("hotelSummary");
 const successMsg = document.getElementById("successMsg");
@@ -92,7 +85,6 @@ document.getElementById("submitBtn").addEventListener("click", () => {
     return;
   }
 
-  // Simulate booking submission
   document.getElementById("submitBtn").textContent = "Processing...";
   document.getElementById("submitBtn").disabled = true;
 
@@ -103,7 +95,6 @@ document.getElementById("submitBtn").addEventListener("click", () => {
   }, 1200);
 });
 
-// Update price whenever dates or rooms change
 ["checkin", "checkout", "rooms"].forEach((id) => {
   document.getElementById(id).addEventListener("change", updatePriceSummary);
 });
@@ -115,14 +106,12 @@ async function loadBookingPage() {
     return;
   }
 
-  // Set back link to the hotel detail page
   document.getElementById("backToHotel").href = `hotel.html?id=${id}`;
 
   try {
     hotelData = await fetchHotelById(id);
     renderHotelSummary(hotelData);
 
-    // Set default dates
     const today = new Date();
     const tomorrow = new Date();
     tomorrow.setDate(today.getDate() + 1);
