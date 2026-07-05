@@ -1,10 +1,3 @@
-/* ============================================
-   hotel.js — Hotel Detail Page Logic
-   - Reads ?id= from URL
-   - Shows hotel info, photo gallery, rating
-   - Book Now → booking.html?id=...
-   ============================================ */
-
 const loadingMsg = document.getElementById("loadingMsg");
 const errorMsg = document.getElementById("errorMsg");
 const hotelDetail = document.getElementById("hotelDetail");
@@ -108,8 +101,7 @@ function renderHotel(hotel) {
   `;
 
   setupGallery(hotel.photos, hotel.thumbnail);
-
-  // Set default dates (today and tomorrow)
+   
   const today = new Date();
   const tomorrow = new Date(today);
   tomorrow.setDate(today.getDate() + 1);
