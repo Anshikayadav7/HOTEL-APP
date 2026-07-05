@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StayBliss - Find Your Perfect Stay</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Stay<span>Bliss</span></a>
+      <div class="nav-search">
+        <input type="text" id="searchInput" placeholder="Search hotels or locations..." />
+      </div>
+      <div class="nav-right">
+        <select id="sortSelect" class="sort-select">
+          <option value="default">Sort by</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating-desc">Top Rated</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Perfect Stay</h1>
+      <p>Discover 500+ handpicked hotels across India</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="results-bar">
+      <span id="resultsCount">Loading...</span>
+    </div>
+
+    <div id="loadingMsg" class="loading">
+      <div class="spinner"></div>
+      <p>Finding the best hotels for you...</p>
+    </div>
+    <div id="errorMsg" class="error-msg" style="display:none;"></div>
+    <div id="hotelGrid" class="hotel-grid"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 StayBliss. All rights reserved.</p>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/listing.js"></script>
+</body>
+</html>
