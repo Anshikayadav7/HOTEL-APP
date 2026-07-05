@@ -1,11 +1,3 @@
-/* ============================================
-   listing.js — Hotel Listing Page Logic
-   - Fetches all hotels from API
-   - Search by name or location
-   - Sort by price / rating
-   - Click card → hotel.html?id=...
-   ============================================ */
-
 const hotelGrid = document.getElementById("hotelGrid");
 const loadingMsg = document.getElementById("loadingMsg");
 const errorMsg = document.getElementById("errorMsg");
