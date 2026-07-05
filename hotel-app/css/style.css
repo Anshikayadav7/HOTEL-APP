@@ -1,7 +1,3 @@
-/* ============================================
-   StayBliss — Baby Pink Theme
-   ============================================ */
-
 :root {
   --pink-bg: #fff0f5;
   --pink-bg-soft: #ffe4ee;
@@ -28,7 +24,6 @@ body {
 .container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
 a { text-decoration: none; color: inherit; }
 
-/* ===== Navbar ===== */
 .navbar {
   background: linear-gradient(135deg, var(--pink-deep), var(--pink-primary));
   color: #fff;
@@ -86,7 +81,6 @@ a { text-decoration: none; color: inherit; }
 
 .nav-right { display: flex; gap: 10px; align-items: center; }
 
-/* ===== Hero ===== */
 .hero {
   background: linear-gradient(135deg, var(--pink-deep) 0%, var(--pink-primary) 60%, #ffb3cf 100%);
   padding: 60px 20px;
@@ -96,7 +90,6 @@ a { text-decoration: none; color: inherit; }
 .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 10px; }
 .hero p { font-size: 16px; opacity: 0.9; }
 
-/* ===== Results bar ===== */
 .results-bar {
   margin: 20px 0 10px;
   font-size: 14px;
@@ -104,7 +97,6 @@ a { text-decoration: none; color: inherit; }
   font-weight: 600;
 }
 
-/* ===== Loading ===== */
 .loading {
   text-align: center;
   padding: 60px 20px;
@@ -142,7 +134,6 @@ a { text-decoration: none; color: inherit; }
   grid-column: 1 / -1;
 }
 
-/* ===== Hotel Grid ===== */
 .hotel-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -213,7 +204,6 @@ a { text-decoration: none; color: inherit; }
 }
 .view-btn:hover { background: var(--pink-deep); }
 
-/* ===== Hotel Detail Page ===== */
 .gallery { margin: 24px 0 0; border-radius: 18px; overflow: hidden; }
 .gallery-main { position: relative; }
 .gallery-main img {
@@ -360,7 +350,6 @@ a { text-decoration: none; color: inherit; }
 
 .no-charge-note { font-size: 12px; text-align: center; color: var(--plum-muted); }
 
-/* ===== Booking Form Page ===== */
 .booking-layout {
   display: flex;
   gap: 30px;
@@ -487,7 +476,6 @@ a { text-decoration: none; color: inherit; }
 .submit-btn:hover { background: var(--pink-deep); transform: scale(1.01); }
 .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
 
-/* ===== Footer ===== */
 .footer {
   text-align: center;
   padding: 20px;
@@ -495,12 +483,10 @@ a { text-decoration: none; color: inherit; }
   font-size: 13px;
 }
 
-/* ===== Scrollbar ===== */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--pink-bg); }
 ::-webkit-scrollbar-thumb { background: var(--pink-primary); border-radius: 8px; }
 
-/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero h1 { font-size: 26px; }
   .gallery-main img { height: 240px; }
